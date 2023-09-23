@@ -75,6 +75,7 @@ module.exports = () => {
         'upload.wikimedia.org',
         'dl.flathub.org',
         'asset.brandfetch.io',
+        'img.icons8.com',
       ],
     },
     experimental: {
