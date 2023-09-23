@@ -1,6 +1,8 @@
+'use client'
 import Link from './Link'
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
+import NowPlaying from './NowPlaying'
 
 export default function Footer() {
   return (
@@ -19,7 +21,12 @@ export default function Footer() {
           ></div>
         </div>
       </div>
-      <div className="mt-16 flex flex-col items-center">
+      <div className="mt-4 flex flex-col items-center">
+        <div className="mb-3 flex space-x-4">
+          <NowPlaying />
+        </div>
+      </div>
+      <div className="mt-4 flex flex-col items-center">
         <div className="mb-3 flex space-x-4">
           <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} size={6} />
           <SocialIcon kind="github" href={siteMetadata.github} size={6} />
