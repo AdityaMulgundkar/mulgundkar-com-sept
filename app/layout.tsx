@@ -15,7 +15,7 @@ const space_grotesk = Poppins({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-space-grotesk',
-  weight: '400'
+  weight: '400',
 })
 
 export const metadata: Metadata = {
