@@ -1,11 +1,8 @@
 interface StackEvenProps {
-  tag?: string;
-  children?: React.ReactNode;
+  tag?: string
+  children?: React.ReactNode
 }
-export const StackEven: React.FC<StackEvenProps> = ({
-  children,
-  tag,
-}) => (
+export const StackEven: React.FC<StackEvenProps> = ({ children, tag }) => (
   <div className="bg-white dark:bg-gray-700 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
     <dt className="text-sm font-medium">{tag}</dt>
     <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
@@ -14,4 +11,4 @@ export const StackEven: React.FC<StackEvenProps> = ({
       </div>
     </dd>
   </div>
-);
+)

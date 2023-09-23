@@ -1,20 +1,21 @@
+import Image from 'next/image'
+
 interface LogoTooltipURLProps {
-  tag?: string;
-  description?: string;
-  src?: string;
-  children?: React.ReactNode;
+  tag?: string
+  description?: string
+  src?: string
+  children?: React.ReactNode
 }
 export const LogoTooltipURL: React.FC<LogoTooltipURLProps> = ({
   children,
-  tag,
-  description = tag || "",
-  src,
+  tag = 'tag',
+  description = tag || '',
+  src = 'src',
 }) => (
   <div className="relative flex flex-col items-center group">
-    <img
+    <Image
       className="col-span-2 max-h-4 w-full object-contain lg:col-span-1 fill-cyan-500 hover:fill-cyan-700"
-      src={src
-      }
+      src={src}
       alt={tag}
       width="158"
       height="48"
@@ -26,4 +27,4 @@ export const LogoTooltipURL: React.FC<LogoTooltipURLProps> = ({
       <div className="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
     </div>
   </div>
-);
+)

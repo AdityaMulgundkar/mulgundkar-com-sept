@@ -1,20 +1,20 @@
 interface LogoTooltipProps {
-  tag?: string;
-  description?: string;
-  children?: React.ReactNode;
+  tag?: string
+  description?: string
+  children?: React.ReactNode
 }
 export const LogoTooltip: React.FC<LogoTooltipProps> = ({
   children,
   tag,
-  description = tag || "",
+  description = tag || '',
 }) => (
   <div className="relative flex flex-col items-center group">
     <img
       className="col-span-2 max-h-4 w-full object-contain lg:col-span-1 fill-cyan-500 hover:fill-cyan-700"
       src={
-        "https://img.icons8.com/" +
+        'https://img.icons8.com/' +
         isColor(tag!).toLowerCase() +
-        getCleanTag(tag!).replace(/ /g, "")?.toLowerCase()
+        getCleanTag(tag!).replace(/ /g, '')?.toLowerCase()
       }
       alt={tag}
       width="158"
@@ -27,32 +27,32 @@ export const LogoTooltip: React.FC<LogoTooltipProps> = ({
       <div className="w-3 h-3 -mt-2 rotate-45 bg-black"></div>
     </div>
   </div>
-);
+)
 
-function getCleanTag(tag: "" | String) {
+function getCleanTag(tag: '' | string) {
   switch (tag) {
-    case "VS Code":
-      return "visual-studio-code-2019";
-    case "Github Copilot":
-      return "github";
-    case "GitKraken":
-      return "git";
-    case "iTerm2":
-      return "console";
+    case 'VS Code':
+      return 'visual-studio-code-2019'
+    case 'Github Copilot':
+      return 'github'
+    case 'GitKraken':
+      return 'git'
+    case 'iTerm2':
+      return 'console'
     default:
-      return tag;
+      return tag
   }
-  throw new Error("Function not implemented.");
+  throw new Error('Function not implemented.')
 }
 
-function isColor(tag: "" | String) {
+function isColor(tag: '' | string) {
   switch (tag) {
-    case "AirTable":
-      return "/";
-    case "Blinkist":
-      return "fluency/";
+    case 'AirTable':
+      return '/'
+    case 'Blinkist':
+      return 'fluency/'
     default:
-      return "color/";
+      return 'color/'
   }
-  throw new Error("Function not implemented.");
+  throw new Error('Function not implemented.')
 }
