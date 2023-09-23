@@ -8,7 +8,7 @@ export const metadata = genPageMetadata({ title: 'Projects' })
 export default function Projects() {
   return (
     <>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <ProjectItem
           title="Embedded system based Fault Tolerant Control and Autonomous Navigation of a UAV"
           description="Designed and developed several drones that can detect motor faults (using fault analysis) and reallocate actuator outputs (using an adaptive controller) to stabilize the drone within a few milliseconds."

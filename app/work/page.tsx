@@ -10,14 +10,24 @@ export const metadata = genPageMetadata({ title: 'Proof of Work' })
 export default function Page() {
   return (
     <>
-      <div>
-        Appendix to my CV, a{' '}
-        <a href="https://landing.jobs/blog/proof-of-work" target="_blank" rel="noreferrer">
-          brief description of my work.
-        </a>
-        <br />
-        Note that this is not a complete list, as I have made this recently and am still in the
-        process of updating.
+      <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+        <h1 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+          Proof of Work
+        </h1>
+        <p>
+          Appendix to my CV, a{' '}
+          <Link
+            className="text-sky-400 dark:text-sky-600 hover:text-sky-500 dark:hover:text-sky-500 hover:underline"
+            href="https://landing.jobs/blog/proof-of-work"
+            target="_blank"
+            rel="noreferrer"
+          >
+            brief description of my work.
+          </Link>
+          <br />
+          Note that this is not a complete list, as I have made this recently and am still in the
+          process of updating.
+        </p>
       </div>
       <Proof
         firstItem={true}
