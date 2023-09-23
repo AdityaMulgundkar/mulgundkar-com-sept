@@ -73,6 +73,8 @@ module.exports = () => {
         'i.imgur.com',
         'opencv.org',
         'upload.wikimedia.org',
+        'dl.flathub.org',
+        'asset.brandfetch.io',
       ],
     },
     experimental: {
