@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface LogoTooltipProps {
   tag?: string
   description?: string
@@ -5,11 +7,11 @@ interface LogoTooltipProps {
 }
 export const LogoTooltip: React.FC<LogoTooltipProps> = ({
   children,
-  tag,
+  tag = '',
   description = tag || '',
 }) => (
   <div className="relative flex flex-col items-center group">
-    <img
+    <Image
       className="col-span-2 max-h-4 w-full object-contain lg:col-span-1 fill-cyan-500 hover:fill-cyan-700"
       src={
         'https://img.icons8.com/' +

@@ -24,8 +24,6 @@ export default function Home({ posts }) {
             Writing about Robotics, Product Dev, Flutter, and other things that I find interesting.
           </p>
         </div>
-        <p>
-        </p>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((post) => {
