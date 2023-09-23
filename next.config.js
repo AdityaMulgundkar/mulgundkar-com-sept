@@ -66,7 +66,14 @@ module.exports = () => {
       dirs: ['app', 'components', 'layouts', 'scripts'],
     },
     images: {
-      domains: ['picsum.photos'],
+      domains: [
+        'picsum.photos',
+        'nis.readthedocs.io',
+        'raw.githubusercontent.com',
+        'i.imgur.com',
+        'opencv.org',
+        'upload.wikimedia.org',
+      ],
     },
     experimental: {
       appDir: true,

@@ -2838,6 +2838,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sindresorhus/slugify@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "@sindresorhus/slugify@npm:2.2.1"
+  dependencies:
+    "@sindresorhus/transliterate": ^1.0.0
+    escape-string-regexp: ^5.0.0
+  checksum: 6d651e99a4dfc63f1eccc5373f722af031f013bfce0b040b2c1151f5795f272f7c47146d8fc5f03afbb410c53c9f91f7cb1a50f402a8bf7dd1b691d8a450c712
+  languageName: node
+  linkType: hard
+
+"@sindresorhus/transliterate@npm:^1.0.0":
+  version: 1.6.0
+  resolution: "@sindresorhus/transliterate@npm:1.6.0"
+  dependencies:
+    escape-string-regexp: ^5.0.0
+  checksum: 947c7c84dcba36c35d12ac7fd95ae9f77e988bd499471ebd0819812c451c8bfd20f8a236084a13fde196ba1eb064871f8915d09995531611569e2fe687411582
+  languageName: node
+  linkType: hard
+
 "@svgr/babel-plugin-add-jsx-attribute@npm:8.0.0":
   version: 8.0.0
   resolution: "@svgr/babel-plugin-add-jsx-attribute@npm:8.0.0"
@@ -4203,6 +4222,13 @@ __metadata:
     strip-ansi: ^6.0.1
     wrap-ansi: ^7.0.0
   checksum: 79648b3b0045f2e285b76fb2e24e207c6db44323581e421c3acbd0e86454cba1b37aea976ab50195a49e7384b871e6dfb2247ad7dec53c02454ac6497394cb56
+  languageName: node
+  linkType: hard
+
+"clsx@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "clsx@npm:2.0.0"
+  checksum: a2cfb2351b254611acf92faa0daf15220f4cd648bdf96ce369d729813b85336993871a4bf6978ddea2b81b5a130478339c20d9d0b5c6fc287e5147f0c059276e
   languageName: node
   linkType: hard
 
@@ -10703,6 +10729,7 @@ __metadata:
   resolution: "tailwind-nextjs-starter-blog@workspace:."
   dependencies:
     "@next/bundle-analyzer": 13.4.19
+    "@sindresorhus/slugify": ^2.2.1
     "@svgr/webpack": ^8.0.1
     "@tailwindcss/forms": ^0.5.4
     "@tailwindcss/typography": ^0.5.9
@@ -10711,6 +10738,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^6.1.0
     "@typescript-eslint/parser": ^6.1.0
     autoprefixer: ^10.4.13
+    clsx: ^2.0.0
     contentlayer: 0.3.4
     cross-env: ^7.0.3
     esbuild: 0.18.11
