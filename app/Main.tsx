@@ -11,11 +11,16 @@ export default function Home({ posts }) {
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Latest
+          <h1 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+            Aditya Mulgundkar
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+          <p className="font-bold text-lg leading-7 text-gray-500 dark:text-gray-500">
             {siteMetadata.description}
+          </p>
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-300">
+            Helping engineers build robust, adaptive and fault-tolerant products. I love building
+            things - especially hardware products that have some level of middleware interaction.
+            Writing about Robotics, Product Dev, Flutter, and other things that I find interesting.
           </p>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
