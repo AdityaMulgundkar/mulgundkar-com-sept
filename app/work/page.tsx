@@ -3,6 +3,7 @@ import { ProjectItem } from '@/components/ProjectItem'
 import { Proof } from '@/components/Proof'
 import { cx } from 'lib/utils'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata = genPageMetadata({ title: 'Proof of Work' })
 
@@ -28,7 +29,13 @@ export default function Page() {
           Designed and developed several drones that can detect motor faults (using fault analysis)
           and reallocate actuator outputs to stabilize the drone within a few milliseconds.
         </p>
-        <img src="/EFTC-Diagram.jpg" alt="Hexa frame" className={cx('w-full')} />
+        <Image
+          src="/EFTC-Diagram.jpg"
+          alt="Hexa frame"
+          className={cx('w-full')}
+          width={1000}
+          height={1000}
+        />
         <p className="mb-4 block font-sans text-base font-light leading-relaxed antialiased">
           Following types of UAV faults were detected and corrected:
         </p>
@@ -49,12 +56,8 @@ export default function Page() {
                 <br />
                 What happens when a motor works at a lower efficiency
               </td>
-              <td>
-                Y
-              </td>
-              <td>
-                Y
-              </td>
+              <td>Y</td>
+              <td>Y</td>
             </tr>
             <tr>
               <td>Motor Failures</td>
@@ -63,42 +66,26 @@ export default function Page() {
                 <br />
                 What happens when a motor stops working completely
               </td>
-              <td>
-                X
-              </td>
-              <td>
-                Y
-              </td>
+              <td>X</td>
+              <td>Y</td>
             </tr>
             <tr>
               <td>Motor Locking</td>
               <td>What happens when a motor gets stuck at some RPM</td>
-              <td>
-                X
-              </td>
-              <td>
-                X
-              </td>
+              <td>X</td>
+              <td>X</td>
             </tr>
             <tr>
               <td>Propeller Faults</td>
               <td>What happens when a propeller chips off</td>
-              <td>
-                Y
-              </td>
-              <td>
-                Y
-              </td>
+              <td>Y</td>
+              <td>Y</td>
             </tr>
             <tr>
               <td>Sensor Faults</td>
               <td>What happens when a sensor stops working</td>
-              <td>
-                Y
-              </td>
-              <td>
-                Y
-              </td>
+              <td>Y</td>
+              <td>Y</td>
             </tr>
           </tbody>
         </table>
@@ -114,7 +101,13 @@ export default function Page() {
           material&apos;s intrinsic shape transformation effect in outer space, advancing
           understanding of material properties under extreme conditions.
         </p>
-        <img src="/nmimsedu.jpg" alt="Hexa frame" className={cx('w-full')} />
+        <Image
+          src="/nmimsedu.jpg"
+          alt="Hexa frame"
+          className={cx('w-full')}
+          width={1000}
+          height={1000}
+        />
       </Proof>
       <Proof title="Open-Source" category="Flutter, OpenCV, PX4, Robotics">
         {/* <img src="/untouched.jpg" alt="Hexa frame" className={cx("w-64")} /> */}
