@@ -20,7 +20,7 @@ const MobileNav = () => {
   }
 
   return (
-    <div className="-mt-10 fixed z-100">
+    <div className="-mt-[50px] ml-3 fixed z-100">
       <button aria-label="Toggle Menu" onClick={onToggleNav} className="sm:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"

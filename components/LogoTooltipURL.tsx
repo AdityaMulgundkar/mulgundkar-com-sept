@@ -12,7 +12,7 @@ export const LogoTooltipURL: React.FC<LogoTooltipURLProps> = ({
   description = tag || '',
   src = 'src',
 }) => (
-  <div className="relative flex flex-col items-center group">
+  <div className="flex flex-col items-center group">
     <Image
       className="col-span-2 max-h-4 w-full object-contain lg:col-span-1 fill-cyan-500 hover:fill-cyan-700"
       src={src}

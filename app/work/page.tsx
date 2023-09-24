@@ -10,11 +10,11 @@ export const metadata = genPageMetadata({ title: 'Proof of Work' })
 export default function Page() {
   return (
     <>
-      <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-        <h1 className="text-xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+      <div className="pb-8 pt-6">
+        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
           Proof of Work
         </h1>
-        <p>
+        <p className="mt-4">
           Appendix to my CV, a{' '}
           <Link
             className="text-sky-400 dark:text-sky-600 hover:text-sky-500 dark:hover:text-sky-500 hover:underline"

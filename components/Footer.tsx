@@ -9,7 +9,7 @@ export default function Footer() {
     <footer>
       <div className="relative">
         <div
-          className="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-34rem)]"
+          className="absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl -top-16 sm:top-[calc(100%-34rem)]"
           aria-hidden="true"
         >
           <div
@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-4 flex flex-col items-center">
-        <div className="mb-3 flex space-x-4">
+        <div className="mb-3 flex space-x-4 w-full">
           <NowPlaying />
         </div>
       </div>
