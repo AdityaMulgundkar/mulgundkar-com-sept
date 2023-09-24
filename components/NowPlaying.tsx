@@ -71,7 +71,7 @@ export default function NowPlaying() {
   const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher)
 
   return (
-    <div className="flex flex-row-reverse items-center sm:flex-row mb-8 mx-4 w-full sm:max-w-[220px]">
+    <div className="flex flex-row-reverse items-center sm:flex-row mb-8 mx-4 w-full sm:max-w-md">
       <Image
         src="https://asset.brandfetch.io/id20mQyGeY/idnZiPe__8.svg"
         alt={'Spotify'}
@@ -79,10 +79,10 @@ export default function NowPlaying() {
         height={200}
         className="w-8 h-8 sm:w-4 sm:h-4 ml-8 mr-0 sm:ml-0 sm:mr-8"
       />
-      <div className="inline-flex flex-col sm:flex-row w-full max-w-full">
+      <div className="inline-flex flex-col sm:flex-row w-full max-w-full truncate">
         {data?.songUrl ? (
           <a
-            className="capsize text-gray-800 dark:text-gray-200 font-medium  max-w-max truncate"
+            className="capsize text-gray-800 dark:text-gray-200 font-medium max-w-max truncate"
             href={data.songUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -99,8 +99,7 @@ export default function NowPlaying() {
           {data?.artist ?? 'Spotify'}
         </p>
       </div>
-
-      {data?.songUrl ? <AnimatedBars /> : <></>}
+      <div className="mr-4 ml-0 sm:mr-0 sm:ml-4">{data?.songUrl ? <AnimatedBars /> : <></>}</div>
     </div>
   )
 }
