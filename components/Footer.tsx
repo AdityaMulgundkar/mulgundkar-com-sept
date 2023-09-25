@@ -22,7 +22,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-4 flex flex-col items-center">
-        <div className="mb-3 flex space-x-4 w-full justify-center">
+        <div className="mb-3 flex space-x-4 w-full justify-center items-center">
           <NowPlaying />
         </div>
       </div>

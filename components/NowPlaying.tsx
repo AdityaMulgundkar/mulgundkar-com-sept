@@ -67,19 +67,29 @@ function AnimatedBars() {
   )
 }
 
+function StaticBars() {
+  return (
+    <div className="w-auto flex items-end overflow-hidden">
+      <span id="bar1" className="w-1 mr-[3px] h-2 bg-gray-300 dark:bg-gray-500 opacity-75" />
+      <span id="bar2" className="w-1 mr-[3px] h-1 bg-gray-300 dark:bg-gray-500" />
+      <span id="bar3" className="w-1 h-3 bg-gray-300 dark:bg-gray-500 opacity-80" />
+    </div>
+  )
+}
+
 export default function NowPlaying() {
   const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher)
 
   return (
-    <div className="flex flex-row-reverse items-center sm:flex-row mb-8 mx-4 w-full sm:max-w-md">
+    <div className="flex flex-row-reverse justify-center items-center sm:flex-row mb-8 mx-4 w-full sm:max-w-md">
       <Image
         src="https://asset.brandfetch.io/id20mQyGeY/idnZiPe__8.svg"
         alt={'Spotify'}
         width={200}
         height={200}
-        className="w-8 h-8 sm:w-4 sm:h-4 ml-8 mr-0 sm:ml-0 sm:mr-8"
+        className="w-8 h-8 sm:w-4 sm:h-4 ml-8 mr-0 sm:ml-0 sm:mr-4"
       />
-      <div className="inline-flex flex-col sm:flex-row w-full max-w-full truncate">
+      <div className="inline-flex flex-col sm:flex-row w-full max-w-full justify-center truncate">
         {data?.songUrl ? (
           <a
             className="capsize text-gray-800 dark:text-gray-200 font-medium max-w-max truncate"
@@ -99,7 +109,9 @@ export default function NowPlaying() {
           {data?.artist ?? 'Spotify'}
         </p>
       </div>
-      <div className="mr-4 ml-0 sm:mr-0 sm:ml-4">{data?.songUrl ? <AnimatedBars /> : <></>}</div>
+      <div className="mr-4 ml-0 sm:mr-0 sm:ml-4">
+        {data?.songUrl ? <AnimatedBars /> : <StaticBars />}
+      </div>
     </div>
   )
 }
