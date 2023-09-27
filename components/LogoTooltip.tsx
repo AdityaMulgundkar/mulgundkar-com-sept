@@ -13,7 +13,7 @@ export const LogoTooltip: React.FC<LogoTooltipProps> = ({ tag = 'tag', src = 'sr
         <Tooltip.Trigger asChild>
           <button className="IconButton">
             <Image
-              className="col-span-2 max-h-4 w-full object-contain lg:col-span-1 dark:grayscale dark:invert"
+              className="col-span-2 max-h-4 w-full object-contain lg:col-span-1"
               src={src}
               alt={tag}
               width="158"
