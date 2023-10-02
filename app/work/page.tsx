@@ -229,6 +229,16 @@ export default function Page() {
         </p>
         <ul>
           <li>
+            <a href="https://rocon.in" target="_blank" rel="noreferrer">
+              Robotics and Control Lab at IIIT-H
+            </a>
+          </li>
+          <li>
+            <a href="https://dfautopilot.com" target="_blank" rel="noreferrer">
+              DroneForce
+            </a>
+          </li>
+          <li>
             <a href="https://wedeasy.in" target="_blank" rel="noreferrer">
               WedEasy
             </a>
